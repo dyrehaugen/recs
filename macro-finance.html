@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>18 Macro-Finance | Economics</title>
+  <meta name="description" content="18 Macro-Finance | Economics" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="18 Macro-Finance | Economics" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="dyrehaugen/recs" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="18 Macro-Finance | Economics" />
+  
+  
+  
+
+<meta name="author" content="Dyrehaugen Web Notebook" />
+
+
+<meta name="date" content="2021-05-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="functional-finance.html"/>
+<link rel="next" href="externalities.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Economics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Economics</a></li>
+<li class="chapter" data-level="2" data-path="scarcity.html"><a href="scarcity.html"><i class="fa fa-check"></i><b>2</b> Scarcity</a></li>
+<li class="chapter" data-level="3" data-path="rationing.html"><a href="rationing.html"><i class="fa fa-check"></i><b>3</b> Rationing</a></li>
+<li class="chapter" data-level="4" data-path="taxing.html"><a href="taxing.html"><i class="fa fa-check"></i><b>4</b> Taxing</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="taxing.html"><a href="taxing.html#tax-shifting"><i class="fa fa-check"></i><b>4.1</b> Tax Shifting</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="nudging.html"><a href="nudging.html"><i class="fa fa-check"></i><b>5</b> Nudging</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="nudging.html"><a href="nudging.html#randomness"><i class="fa fa-check"></i><b>5.1</b> Randomness</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="discounting.html"><a href="discounting.html"><i class="fa fa-check"></i><b>6</b> Discounting</a></li>
+<li class="chapter" data-level="7" data-path="risking.html"><a href="risking.html"><i class="fa fa-check"></i><b>7</b> Risking</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="risking.html"><a href="risking.html#uncertainty"><i class="fa fa-check"></i><b>7.1</b> Uncertainty</a></li>
+<li class="chapter" data-level="7.2" data-path="risking.html"><a href="risking.html#pooling-risk"><i class="fa fa-check"></i><b>7.2</b> Pooling Risk</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="cooperation.html"><a href="cooperation.html"><i class="fa fa-check"></i><b>8</b> Cooperation</a></li>
+<li class="chapter" data-level="9" data-path="decoupling.html"><a href="decoupling.html"><i class="fa fa-check"></i><b>9</b> Decoupling</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="decoupling.html"><a href="decoupling.html#rebound-jevons-paradox"><i class="fa fa-check"></i><b>9.1</b> Rebound (Jevons Paradox)</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="ergodicity.html"><a href="ergodicity.html"><i class="fa fa-check"></i><b>10</b> Ergodicity</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="ergodicity.html"><a href="ergodicity.html#almost-surely"><i class="fa fa-check"></i><b>10.1</b> Almost surely</a></li>
+<li class="chapter" data-level="10.2" data-path="ergodicity.html"><a href="ergodicity.html#kelly-criterion"><i class="fa fa-check"></i><b>10.2</b> Kelly Criterion</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="institutional.html"><a href="institutional.html"><i class="fa fa-check"></i><b>11</b> Institutional</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="institutional.html"><a href="institutional.html#veblen"><i class="fa fa-check"></i><b>11.1</b> Veblen</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="neo-classical-economics.html"><a href="neo-classical-economics.html"><i class="fa fa-check"></i><b>12</b> Neo Classical Economics</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="neo-classical-economics.html"><a href="neo-classical-economics.html#free-market"><i class="fa fa-check"></i><b>12.1</b> Free Market</a></li>
+<li class="chapter" data-level="12.2" data-path="neo-classical-economics.html"><a href="neo-classical-economics.html#human-capital-theory"><i class="fa fa-check"></i><b>12.2</b> Human Capital Theory</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="neo-liberal-economics.html"><a href="neo-liberal-economics.html"><i class="fa fa-check"></i><b>13</b> Neo-liberal Economics</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="neo-liberal-economics.html"><a href="neo-liberal-economics.html#washinton-consensus"><i class="fa fa-check"></i><b>13.1</b> Washinton Consensus</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="spatial-economics.html"><a href="spatial-economics.html"><i class="fa fa-check"></i><b>14</b> Spatial Economics</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="spatial-economics.html"><a href="spatial-economics.html#urban-economics"><i class="fa fa-check"></i><b>14.1</b> Urban Economics</a>
+<ul>
+<li class="chapter" data-level="14.1.1" data-path="spatial-economics.html"><a href="spatial-economics.html#expertise"><i class="fa fa-check"></i><b>14.1.1</b> Expertise</a></li>
+<li class="chapter" data-level="14.1.2" data-path="spatial-economics.html"><a href="spatial-economics.html#trusting-science"><i class="fa fa-check"></i><b>14.1.2</b> Trusting Science</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="spatial-economics.html"><a href="spatial-economics.html#history-of-urban-economics"><i class="fa fa-check"></i><b>14.2</b> History of Urban Economics</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="spatial-economics.html"><a href="spatial-economics.html#jane-jacobs"><i class="fa fa-check"></i><b>14.2.1</b> Jane Jacobs</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="spatial-economics.html"><a href="spatial-economics.html#regional-economics"><i class="fa fa-check"></i><b>14.3</b> Regional Economics</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="econophysics.html"><a href="econophysics.html"><i class="fa fa-check"></i><b>15</b> Econophysics</a></li>
+<li class="chapter" data-level="16" data-path="complexity-economics.html"><a href="complexity-economics.html"><i class="fa fa-check"></i><b>16</b> Complexity Economics</a></li>
+<li class="chapter" data-level="17" data-path="functional-finance.html"><a href="functional-finance.html"><i class="fa fa-check"></i><b>17</b> Functional Finance</a></li>
+<li class="chapter" data-level="18" data-path="macro-finance.html"><a href="macro-finance.html"><i class="fa fa-check"></i><b>18</b> Macro-Finance</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="macro-finance.html"><a href="macro-finance.html#institutional-supercycles"><i class="fa fa-check"></i><b>18.1</b> Institutional Supercycles</a></li>
+<li class="chapter" data-level="18.2" data-path="macro-finance.html"><a href="macro-finance.html#central-banking"><i class="fa fa-check"></i><b>18.2</b> Central Banking</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="externalities.html"><a href="externalities.html"><i class="fa fa-check"></i><b>19</b> Externalities</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="externalities.html"><a href="externalities.html#history-of-economics-externalities"><i class="fa fa-check"></i><b>19.1</b> History of Economics’ ‘Externalities’</a></li>
+<li class="chapter" data-level="19.2" data-path="externalities.html"><a href="externalities.html#ecosystem-services"><i class="fa fa-check"></i><b>19.2</b> Ecosystem Services</a></li>
+<li class="chapter" data-level="19.3" data-path="externalities.html"><a href="externalities.html#environmental-degradation"><i class="fa fa-check"></i><b>19.3</b> Environmental Degradation</a>
+<ul>
+<li class="chapter" data-level="19.3.1" data-path="externalities.html"><a href="externalities.html#kuznets-and-engel-curves"><i class="fa fa-check"></i><b>19.3.1</b> Kuznets and Engel Curves</a></li>
+</ul></li>
+<li class="chapter" data-level="19.4" data-path="externalities.html"><a href="externalities.html#energy-and-transport"><i class="fa fa-check"></i><b>19.4</b> Energy and Transport</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="money.html"><a href="money.html"><i class="fa fa-check"></i><b>20</b> Money</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="money.html"><a href="money.html#money-creation"><i class="fa fa-check"></i><b>20.1</b> Money Creation</a></li>
+<li class="chapter" data-level="20.2" data-path="money.html"><a href="money.html#inflation"><i class="fa fa-check"></i><b>20.2</b> Inflation</a>
+<ul>
+<li class="chapter" data-level="20.2.1" data-path="money.html"><a href="money.html#fed-policy-and-inflation"><i class="fa fa-check"></i><b>20.2.1</b> FED Policy and Inflation</a></li>
+</ul></li>
+<li class="chapter" data-level="20.3" data-path="money.html"><a href="money.html#modern-monetary-theory-mmt"><i class="fa fa-check"></i><b>20.3</b> Modern Monetary Theory (MMT)</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="markets.html"><a href="markets.html"><i class="fa fa-check"></i><b>21</b> Markets</a>
+<ul>
+<li class="chapter" data-level="21.1" data-path="markets.html"><a href="markets.html#markets-as-entropy-maximisers"><i class="fa fa-check"></i><b>21.1</b> Markets as Entropy Maximisers</a>
+<ul>
+<li class="chapter" data-level="21.1.1" data-path="markets.html"><a href="markets.html#the-social-relations-of-production-as-constraints"><i class="fa fa-check"></i><b>21.1.1</b> The social relations of production as constraints</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="demand.html"><a href="demand.html"><i class="fa fa-check"></i><b>22</b> Demand</a>
+<ul>
+<li class="chapter" data-level="22.1" data-path="demand.html"><a href="demand.html#human-needs"><i class="fa fa-check"></i><b>22.1</b> Human Needs</a></li>
+<li class="chapter" data-level="22.2" data-path="demand.html"><a href="demand.html#aggregate-demand-function"><i class="fa fa-check"></i><b>22.2</b> Aggregate Demand Function</a></li>
+</ul></li>
+<li class="chapter" data-level="23" data-path="productivity.html"><a href="productivity.html"><i class="fa fa-check"></i><b>23</b> Productivity</a>
+<ul>
+<li class="chapter" data-level="23.1" data-path="productivity.html"><a href="productivity.html#productivity-pay-gap"><i class="fa fa-check"></i><b>23.1</b> Productivity-Pay Gap</a></li>
+<li class="chapter" data-level="23.2" data-path="productivity.html"><a href="productivity.html#ipr-stagnation"><i class="fa fa-check"></i><b>23.2</b> IPR Stagnation</a></li>
+</ul></li>
+<li class="chapter" data-level="24" data-path="resource-economics.html"><a href="resource-economics.html"><i class="fa fa-check"></i><b>24</b> Resource Economics</a>
+<ul>
+<li class="chapter" data-level="24.1" data-path="resource-economics.html"><a href="resource-economics.html#sustainability"><i class="fa fa-check"></i><b>24.1</b> Sustainability</a></li>
+<li class="chapter" data-level="24.2" data-path="resource-economics.html"><a href="resource-economics.html#resource-extraction"><i class="fa fa-check"></i><b>24.2</b> Resource Extraction</a></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="demographics.html"><a href="demographics.html"><i class="fa fa-check"></i><b>25</b> Demographics</a>
+<ul>
+<li class="chapter" data-level="25.1" data-path="demographics.html"><a href="demographics.html#china"><i class="fa fa-check"></i><b>25.1</b> China</a></li>
+</ul></li>
+<li class="chapter" data-level="26" data-path="development-economics.html"><a href="development-economics.html"><i class="fa fa-check"></i><b>26</b> Development Economics</a>
+<ul>
+<li class="chapter" data-level="26.1" data-path="development-economics.html"><a href="development-economics.html#structural-reforms"><i class="fa fa-check"></i><b>26.1</b> Structural Reforms</a></li>
+</ul></li>
+<li class="chapter" data-level="27" data-path="economic-measurements.html"><a href="economic-measurements.html"><i class="fa fa-check"></i><b>27</b> Economic Measurements</a>
+<ul>
+<li class="chapter" data-level="27.1" data-path="economic-measurements.html"><a href="economic-measurements.html#our-besda-economy"><i class="fa fa-check"></i><b>27.1</b> Our BESDA economy</a>
+<ul>
+<li class="chapter" data-level="27.1.1" data-path="economic-measurements.html"><a href="economic-measurements.html#gdp-and-ebitda"><i class="fa fa-check"></i><b>27.1.1</b> GDP and EBITDA</a></li>
+<li class="chapter" data-level="27.1.2" data-path="economic-measurements.html"><a href="economic-measurements.html#a-besda-economy"><i class="fa fa-check"></i><b>27.1.2</b> A BESDA economy</a></li>
+</ul></li>
+<li class="chapter" data-level="27.2" data-path="economic-measurements.html"><a href="economic-measurements.html#gdp"><i class="fa fa-check"></i><b>27.2</b> GDP</a></li>
+</ul></li>
+<li class="chapter" data-level="28" data-path="economic-modelling.html"><a href="economic-modelling.html"><i class="fa fa-check"></i><b>28</b> Economic Modelling</a>
+<ul>
+<li class="chapter" data-level="28.1" data-path="economic-modelling.html"><a href="economic-modelling.html#model-land"><i class="fa fa-check"></i><b>28.1</b> Model-land</a></li>
+<li class="chapter" data-level="28.2" data-path="economic-modelling.html"><a href="economic-modelling.html#end-of-theory"><i class="fa fa-check"></i><b>28.2</b> End of Theory</a></li>
+</ul></li>
+<li class="chapter" data-level="29" data-path="tax.html"><a href="tax.html"><i class="fa fa-check"></i><b>29</b> Tax</a>
+<ul>
+<li class="chapter" data-level="29.1" data-path="tax.html"><a href="tax.html#corporate-tax"><i class="fa fa-check"></i><b>29.1</b> Corporate Tax</a></li>
+</ul></li>
+<li class="chapter" data-level="30" data-path="economics-discipline.html"><a href="economics-discipline.html"><i class="fa fa-check"></i><b>30</b> Economics Discipline</a></li>
+<li class="chapter" data-level="31" data-path="economists.html"><a href="economists.html"><i class="fa fa-check"></i><b>31</b> Economists</a>
+<ul>
+<li class="chapter" data-level="31.1" data-path="economists.html"><a href="economists.html#joan-robinson"><i class="fa fa-check"></i><b>31.1</b> Joan Robinson</a></li>
+<li class="chapter" data-level="31.2" data-path="economists.html"><a href="economists.html#pierro-sraffa"><i class="fa fa-check"></i><b>31.2</b> Pierro Sraffa</a></li>
+<li class="chapter" data-level="31.3" data-path="economists.html"><a href="economists.html#mario-draghi"><i class="fa fa-check"></i><b>31.3</b> Mario Draghi</a></li>
+</ul></li>
+<li class="part"><span><b>I Appendices</b></span></li>
+<li class="appendix"><span><b>Appendices</b></span></li>
+<li class="chapter" data-level="A" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i><b>A</b> About</a></li>
+<li class="chapter" data-level="B" data-path="links.html"><a href="links.html"><i class="fa fa-check"></i><b>B</b> Links</a></li>
+<li class="chapter" data-level="C" data-path="news.html"><a href="news.html"><i class="fa fa-check"></i><b>C</b> NEWS</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/dyrehaugen/recs" target="blank">On Github</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Economics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="macro-finance" class="section level1" number="18">
+<h1><span class="header-section-number">18</span> Macro-Finance</h1>
+<p>The ultimate driver of government financing costs is the central bank.</p>
+<div id="institutional-supercycles" class="section level2" number="18.1">
+<h2><span class="header-section-number">18.1</span> Institutional Supercycles</h2>
+<p><em>Dafermos</em></p>
+<p><strong>Supercycle</strong></p>
+<p>We build upon the Minskyan concepts of ‘thwarting mechanisms’ and ‘supercycles’ to
+develop a framework for the analysis of
+the dynamic evolutionary interactions between
+macrofinancial, institutional and political processes.</p>
+<p>Thwarting mechanisms are institutional structures that aim to
+stabilise the macrofinancial system.
+The effectiveness of such structures changes over time,
+creating a secular cyclical pattern in capitalism: the supercycle.</p>
+<p>We develop a macrofinancial stability index and identify two supercycles in the post-war period,
+which we label the industrial and financial globalisation supercycle respectively.</p>
+<p>For each, we apply a four-phase classification system, based on the
+effectiveness of institutions, customs and political structures
+for stabilising the macrofinancial system.</p>
+<p>The supercycles framework can be used to explain and anticipate
+macroeconomic, financial and thus political developments, and
+moves beyond conventional approaches in which such developments are
+treated as exogenous shocks.</p>
+<p><em>Framework</em></p>
+<p>Despite the bidirectional and dynamic nature of the interactions between institutions and macrofinancial
+processes, analysis is often partial and static. In the political economy literature, institutional change is
+linked with exogenous macroeconomic or financial shocks, such as shifts in inflation or the policy
+interest rate (Iversen and Soskice, 2012; Gabor and Ban, 2013). Conversely, macrofinancial
+developments are explained as arising from exogenous institutional change, such as alterations to
+financial regulation or labour market legislation. A framework in which institutional change and
+macrofinancial processes are dynamically interlinked is still missing.</p>
+<p>In this paper, we develop an evolutionary framework that connects macrofinancial processes and
+institutional change. The foundations of this framework lie with two largely overlooked concepts in
+Minsky’s analysis of financial capitalism (Palley, 2011). The first is that of ‘thwarting mechanisms.’
+This concept draws on Minsky’s insight that, although capitalism is inherently unstable, this instability
+rarely becomes explosive because of the existence of ‘customs, institutions or policy interventions’ that
+tame destabilising forces (Ferri and Minsky, 1992, p. 84). Thwarting mechanisms counteract the
+inherent instability of capitalism, allowing for long periods of high economic activity and social and
+financial stability.
+However, the effectiveness of thwarting mechanisms varies over time, eventually diminishing as a
+result of the profit-seeking actions of economic agents and the generation of new sources of long-run
+instability. This endogenous erosion gives rise to crises, which, in turn, lead to the development of new
+thwarting mechanisms. The rise and fall of thwarting mechanisms generates secular cycles in
+macrofinancial stability. This ‘supercycle’ is the second concept we borrow from Minsky and Palley.</p>
+<p><em>Thwarting Mechanisms</em></p>
+<p>Minsky’s concept of thwarting mechanisms:
+‘customs, institutions or policy interventions that make observed values of
+macroeconomic variables different from what they would have been
+if each economic agent pursued “only his own gain”.’</p>
+<p>Thwarting mechanisms reduce the amplitude of basic cycles,
+constraining instability by <em>imposing ceilings and floors</em> on the dynamic path of the
+economic system.</p>
+<p><em>Floor mechanisms</em> aim to ensure a minimum level of aggregate demand,
+thereby placing a floor under the level of economic activity. These
+mechanisms may be the result of deliberate policy interventions,
+(e.g. activist fiscal policy), or a side effect of other developments
+(e.g. expansion of household debt to maintain consumption spending).</p>
+<p><em>Ceiling mechanisms</em> aim to impose upper limits on the economic expansion by restricting
+activities that may enhance growth but also generate instability.
+Examples of ceiling mechanisms include inflation targeting,
+financial regulation aimed at reducing procyclicality and leverage, and
+capital controls to restrict speculative financial inflows.</p>
+<p>The supercycle is a long-run institutional and political cycle
+over which the effectiveness of a particular configuration of thwarting mechanisms
+first increases and then declines.
+The configuration of thwarting mechanisms shapes the supercycle,
+hardwiring powerful macroeconomic ideas into policy regimes.</p>
+<p>Macrofinancial stability is primarily driven by the
+effectiveness of thwarting mechanisms.</p>
+<p><em>Four Phases</em></p>
+<p>Four phases of the supercycle: expansion, maturity, crisis and genesis.</p>
+<p>During the <em>expansion</em> phase, newly introduced thwarting
+mechanisms are effective, leading to economic expansion and broad social and financial stability:
+economic and financial activity is disrupted by the recessions of the basic cycles, but thwarting
+mechanisms prevent a systemic crisis.
+Economic agents learn how to adapt to the new institutional environment, however, innovating to
+preserve or increase their profits and thereby reducing the effectiveness of thwarting mechanisms.
+Further, mechanisms introduced to reduce one source of instability may over time create others,
+potentially as a result of interaction with other thwarting mechanisms.</p>
+<p>Once the effectiveness of thwarting mechanisms starts to decline, the cycle enters
+the <em>maturity</em> phase, during which economic expansion continues but
+the macrofinancial stability of the system is diminishing.</p>
+<p>The declining effectiveness of thwarting mechanisms ultimately leads to <em>crisis</em>,
+because the institutional framework is no longer sufficient to
+constrain the dynamics of the basic cycle.
+At this point, a basic-cycle recession leads to deep economic, political and social instability,
+and institutional restructuring.
+While government intervention may stabilise the economy, broad-based recovery is impossible because
+existing thwarting mechanisms are ineffective: the institutional structure is can no longer ensure
+macrofinancial stability.</p>
+<p>The ensuing <em>genesis</em> phase sees attempts to establish a new configuration of
+thwarting mechanisms, attempts shaped by political struggles.
+When – or if – effective new mechanisms are introduced, the next supercycle begins.
+In the case that – for political, social or technological reasons –
+such mechanisms cannot be introduced, the crisis phase will be prolonged,
+likely accompanied by political and social turmoil.</p>
+<p><em>Institutional Change</em></p>
+<p>Institutions, understood as ‘rules of the game’ provide mechanisms to facilitate
+market exchange in the presence of transactions costs that
+prevent an optimal frictionless equilibrium.</p>
+<p>Causation is largely unidirectional: given the presence of transactions costs,
+exogenously imposed ‘good’ institutions –
+usually understood as the rule of law, secure property rights, well-developed
+financial markets etc. – produce good economic outcomes.
+Changes in institutional structure, understood as formal ‘rules of the game’
+result from ongoing optimisation by market participants
+over the costs of reconfiguration relative to the benefits,
+given incomplete information sets, technology, and firm-specific knowledge.</p>
+<p>Recent work goes beyond this micro-based analysis to examine the possibility of emergent properties
+in <em>complex evolutionary systems</em>, using agent-based modelling techniques.
+Thwarting mechanisms can be viewed as constraining the macrofinancial instability that arises
+from the emergent properties of such complex systems.</p>
+<p>Institutional structure itself, understood as the configuration of thwarting mechanisms,
+emerges and evolves as a result of the profit-seeking behaviour of agents.
+The agent-driven erosion of thwarting mechanisms can give rise to
+macrofinancial instability.</p>
+<p>The distribution of power influences the
+design of thwarting mechanisms; it does not merely affect macroeconomic targets and the associated
+policy design. Policy makers need to establish mechanisms that keep a range of key macroeconomic
+variables within certain bounds, irrespective of the primary macroeconomic target; otherwise,
+macroeconomic instability would undermine political stability.</p>
+<p>The way that thwarting mechanisms are eroded is specific to each supercycle:
+the strength of labour in the 1970s undermined the wage-price consensus,
+giving rise to inflationary pressure,
+while the strength of finance in the 2000s placed limits on
+the effectiveness of mechanisms to constrain financial instability.</p>
+<p><em>Macrofinancial Stability Index (MSI)</em></p>
+<p>The MSI is constructed using a number of ‘floor,’ ‘ceiling’ and ‘corridor’
+macroeconomic and financial variables.</p>
+<p>The MSI is calculated as one minus
+an average of the normalised distances of floor, ceiling and corridor
+variables from their maximum, minimum and average values respectively (over the period under
+investigation.
+The MSI thus takes values between 0 (minimum stability) and 1 (maximum stability).</p>
+<p><img src="fig/msi.png" /></p>
+<p>High-income countries experienced common secular cyclical movements in their
+macrofinancial stability in the post-World War II period.</p>
+<p>The ideological shift on macroeconomic management at the end of the 1970s brought independent
+central banks oriented to inflation targeting and fiscal deficits financed on sovereign debt markets.
+Mass privatisation reduced the state’s economic footprint, while previous gains on employment
+protection and unemployment benefits were substantially rolled back. Growth
+increasingly relied on rapid expansion of leverage and increasing financial activity.
+The financial sector, in turn, found that new institutional structures were required
+to enable leverage to expand beyond traditional constraints.
+During the expansionary phase of the FG supercycle, shadow banking expanded significantly,
+absorbing the flow of assets resulting from the continued expansion of credit.
+Securitisation and the originate-to-distribute model allowed banks to
+transform illiquid assets, mortgage loans in particular, into marketable securities.
+These securities were financed with short-term liabilities such as
+repos and asset-backed commercial paper (ABCP).
+Growth became increasingly reliant on collateral-based financial activity.</p>
+<p>Collateral plays a central role in funding neorentier balance sheets.
+Neorentiers issue short-term (often overnight) repo deposits secured by tradable collateral.
+For lenders such as institutional cash pools or money market funds, collateral
+makes repos a better liquidity management vehicle than unsecured bank deposits.
+Repo borrowing allows a wide range of institutions to access money market
+funding, while rising asset prices lead to increasing leverage capacity
+because repo collateral is marked to market.
+The use of collateral functionally, and imperfectly, replaces direct
+sovereign guarantees on short-term liquid assets.</p>
+<p>The rise of collateral-based finance fundamentally changed the relationships
+between central banks and governments.
+In the 1990s, central banks in high-income countries collectively sanctioned neorentiers’
+turn to shadow deposits by liberalising repo markets,
+often to enable Ministries of Finance to develop liquid government bond markets.
+States turned to neorentiers in the age of
+independent central banks and capital market financing of budget deficits, introducing reforms in
+sovereign bond markets designed according to neorentier preferences:
+regular auctions facilitated by primary dealers and deregulated repo markets</p>
+<p>The promise of liquidity for sovereign bonds entrenches the ‘infrastructural power’ of finance:
+neorentiers promise liquidity to Ministries of Finance, and well-functioning monetary
+transmission mechanisms to central banks, improving their ability to oppose policy innovations or
+tighter regulatory measures.
+The rising power of neorentiers thus serves to discipline
+states, curbing fiscal and regulatory thwarting mechanisms:
+market financing of fiscal deficits privileges neorentiers as mediators
+between the monetary and the fiscal arms of the state, and
+creates conflicting objectives for the central bank and the Treasury.</p>
+<p>Easy credit conditions allowed sustained expansion of private debt,
+enabling aggregate demand to keep up with productive capacity
+in the face of weak income growth and government retrenchment.
+Credit-financed consumption took over from capital investment as the driver of growth.</p>
+<p>While crisis-era innovations succeeded in preventing financial system collapse and depression,
+growth has not returned.
+In our framework, this less due to ‘secular stagnation’ than to the
+institutional architecture of the FG supercycle –
+weak and ‘flexible’ labour, high inequality and government retrenchment.
+Without a change in this architecture – without a new set of thwarting mechanisms –
+it is difficult to identify a likely source of sustained demand growth other than
+a return to credit expansion.</p>
+<p>Overall, while institutional changes improved the effectiveness of stabilising mechanisms
+in the period prior to the coronavirus pandemic, the continuous push for asset-based welfare
+reinforced the structural drivers of neorentier capitalism
+without delivering a new engine of growth.
+When the coronavirus crisis struck, a new configuration of thwarting mechanisms
+that could foster economic expansion alongside financial stability had not yet emerged.
+The thwarting mechanisms of the next supercycle will be, at least in part,
+the result of the rapid institutional change that has taken place as a result of this crisis,
+and of greater awareness of the potential for future pandemics.
+Inevitably, the next supercycle will also be conditioned by
+the even greater crisis of climate change.</p>
+<p><em>Green Supercycle</em></p>
+<p>What is most urgently required, in light of the COVID-19 and
+climate crises, is a detailed understanding of the current genesis phase
+and the prospects for the emergence of a new set of thwarting mechanisms
+that would underpin a green supercycle.</p>
+<p><a href="https://www.researchgate.net/publication/343472909_Institutional_supercycles_an_evolutionary_macro-finance_approach">Dafermos Gabor (2020) Institutional Supercycles</a>
+<a href="pdf/Dafermos_Gabor_2021_Institutional_Supercycles.pdf">(pdf)</a></p>
+</div>
+<div id="central-banking" class="section level2" number="18.2">
+<h2><span class="header-section-number">18.2</span> Central Banking</h2>
+<p><em>Braun</em></p>
+<p>The impact of international economic integration on social protection is conditional on
+the monetary regime.</p>
+<p>The role of the European Central Bank (ECB) as the supranational enforcer of the
+economic logic of integration since monetary union.</p>
+<p>While Polanyi conceptualized central banking as an institution of
+non-market coordination that evolved to protect the
+domestic economy from gold standard pressures,
+the ECB has acted as an enforcer of disembedding “euro standard” pressures
+vis-à-vis national labor market and welfare state institutions.</p>
+<p>Despite lacking the mandate or the authority to override national legislation,
+the ECB, strategically pursuing its organizational and systemic interests, pushed
+for structural reforms via discursive advocacy and conditionality.
+Our results show that
+Europe’s prospects for Polanyian non-market coordination are determined by Frankfurt
+as much as by Luxembourg and Brussels.</p>
+<p><strong>The death of ‘Social Europe’</strong></p>
+<p>The European Commission’s slogan of “a Europe that protects,” introduced in 2019,
+subtly diverges from the Treaty of Rome’s commitment to “proper social protection.”
+This is no accident.
+The euro area debt crisis accelerated labor market deregulation and
+welfare state retrenchment, and the idea of a “Social Europe” has been declared “dead.”
+At the same time, and particularly among those most affected by by these developments,
+protectionist and nationalist sentiments have been on the rise.
+Brussels watchers have read “a Europe that protects” as a bellwether
+of a new, non-liberal politics of protection.</p>
+<p>The European Union (EU) as a unique case combining
+high levels of protection with full
+“globalization in the strict sense of the word,”
+namely unrestricted competition for capital, goods and services.</p>
+<p>The strictures of the euro considerably amplified the economic
+logic of integration relative to the legal and political logics
+expressed through the ECJ and the Commission, respectively.
+With the introduction of the euro in 1999, this economic
+logic of integration found its institutional expression in
+the European Central Bank (ECB).
+Since then, the relationship between economic integration and
+social protection has been shaped in Frankfurt as much as in Brussels and Luxembourg.</p>
+<p><strong>Structural Reforms</strong></p>
+<p>The ECB defined structural reforms, in strikingly Polanyian terms, as policies
+that “change the fabric of an economy, the institutional and regulatory framework in
+which businesses and people operate.”</p>
+<p>This advocacy constitutes a puzzle:
+The ECB lacks both a mandate and the legal means to
+shape labor market and social policies
+at the member-state level.
+Pushing to “change the fabric” of societies therefore entails significant
+reputational risks.
+Why, then, did the ECB chose to push for structural reforms?
+Our explanatory framework places the emphasis on
+the ECB’s organizational (credibility and legitimacy) and
+systemic (survival of the euro) interests.
+In pursuing those interests, the ECB strategically adjusted the method and content of
+its structural reform advocacy to fit the economic and political context.
+In the wake of the euro area debt crisis, the
+ECB acquired the power—shared with the Commission and the International Monetary
+Fund (IMF)—to impose and enforce policy conditionality.</p>
+<p><strong>Polanyi</strong></p>
+<p>Our analysis, while drawing on Polanyi, fills an important gap in Polanyian thinking
+on the political economy of central banking. According to Polanyi, national central bank-
+ing evolved as an expression of the countermovement to the commodification of money
+under the international gold standard. Whereas Polanyi said little about potential con-
+flicts between non-market coordination in the domain of money (central banks) and social
+protection in the domain of labor (social policies and trade unions), this conflict subse-
+quently moved to the very center of macroeconomic governance.
+A large literature has
+since studied the interaction between national central banks and national labor market
+policies and wage-setting actors.</p>
+<p>The institutional setting of this interaction
+changed dramatically with EMU, which established a supranational monetary regime with
+its own supranational central bank. From the beginning, heterogeneous labor market in-
+stitutions and social policies threatened divergent national inflation developments, which
+clashed with the ECB’s one-size-fits-all monetary policy.</p>
+<p>Whereas Polanyi would have
+expected a central bank to protect national economies from the disembedding pressures
+of the monetary regime, the ECB has instead embodied these very pressures, acting as
+a—if not the—key planner of laissez-faire in national labor markets.</p>
+<p>Looking beyond Europe, our analysis contributes to the literature on policy diffusion in
+the context of economic globalization.
+Here, national policymakers routinely encounter
+the problems of translating and enforcing perceived functional pressures emanating from
+the international level.</p>
+<p>The IMF,
+guided by the “Washington Consensus,” made its emergency lending conditional on gov-
+ernments’ implementing specific structural reforms, playing the role of both translator
+and enforcer.</p>
+<p>Central banks, as the ultimate repositories of “epistemic authority” on
+economic matters, are uniquely positioned to play a similar role at the domestic level.
+In the euro area, the role of translator and—to a lesser but significant
+extent—enforcer of perceived functional pressures was assumed by the ECB
+ECB identified—and sought to counter via structural reforms
+and public-sector wage restraint—the diverging trend in unit labor costs
+as early as 2005, years before the European Commission.</p>
+<p>The ECB has been a highly articulate proponent of specific structural reforms
+in national labor markets and social policy regimes.
+When unit labor cost divergence, first recognized and prioritized by Trichet,
+threatened the very effectiveness of supranational monetary policy, the ECB began to pro-
+mote structural reforms as means of macroeconomic adjustment, both in public speeches
+and behind the scenes with national policymakers.
+Executive Board members urged gov-
+ernments to seek downward wage adjustments, both via structural labor market reforms
+and by imposing wage restraint on the public sector.
+When the euro-area debt crisis hit,
+the ground for its interpretation as a crisis of competitiveness divergence had already been
+prepared by the ECB.
+When circumstances added formal and informal conditionality to
+the ECB’s toolkit, it wielded those instruments to help <em>enforce</em>
+labor market liberalization, internal devaluation, and public sector wage cuts.
+It was only when deflationary pressures
+and criticism in the European Parliament and elsewhere threatened its legitimacy that
+the ECB abandoned its advocacy of structural reforms.</p>
+<p>Despite lacking both a mandate and the legal
+means to directly override national regulations, the ECB has been a keen supranational
+advocate of market-enhancing integration in the field of labor market and social policy.</p>
+<p>This analysis also sheds new light on the broader political economy of central banking.
+Polanyi and others have shown that national central banking evolved under the interna-
+tional gold standard to buffer the disruptive adjustment pressures on national economies.
+The supranational ECB provided such protection for the financial system, but not for
+labor. Instead, emulating the role the IMF in other parts of the world, the ECB trans-
+lated—and subsequently helped to enforce—the perceived functional pressures of interna-
+tional monetary and financial integration. Whether the ECB is constitutionally wedded
+to the role of “prime mover in the move to a market society” remains to be seen. 135 Its
+recent shift from structural reform advocacy to calls for wage increases has been echoed
+in the US, where the Federal Reserve has signaled that it will prioritize employment and
+wage growth over consumer and asset price stabilization. Central banks may yet again
+become “active agents of the countermovement.”</p>
+<p><a href="https://osf.io/preprints/socarxiv/dp3nv">Braun (2021) Planning Laissez-faire: Supranational Central Banking</a>
+<a href="pdf/Braun_2021_Planning_laissez-faire.pdf">(pdf)</a></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="functional-finance.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="externalities.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/dyrehaugen/recs/edit/master/330-macro-finance.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["recs.pdf", "recs.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
