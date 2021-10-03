@@ -4,8 +4,8 @@
 %
 \documentclass[
 ]{book}
-\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
+\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
@@ -41,8 +41,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs,array}
-\usepackage{calc} % for calculating minipage widths
+\usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -78,15 +77,12 @@
 \makeatother
 
 \renewcommand\chaptername{}
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{Economics}
 \author{Dyrehaugen Web Notebook}
-\date{2021-07-08}
+\date{2021-10-03}
 
 \begin{document}
 \maketitle
@@ -232,18 +228,18 @@ Now, back to our question: if you were to flip a coin three times, and there is 
 
 \begin{longtable}[]{@{}ll@{}}
 \toprule
-Flips & p(Ht+1\textbar Ht) \\ \addlinespace
+Flips & p(Ht+1\textbar Ht)\tabularnewline
 \midrule
 \endhead
-HHH & 100\% \\ \addlinespace
-HHT & 50\% \\ \addlinespace
-HTH & 0\% \\ \addlinespace
-HTT & 0\% \\ \addlinespace
-THH & 100\% \\ \addlinespace
-THT & 0\% \\ \addlinespace
-TTH & -- \\ \addlinespace
-TTT & -- \\ \addlinespace
-Exp.val & 42\% \\ \addlinespace
+HHH & 100\%\tabularnewline
+HHT & 50\%\tabularnewline
+HTH & 0\%\tabularnewline
+HTT & 0\%\tabularnewline
+THH & 100\%\tabularnewline
+THT & 0\%\tabularnewline
+TTH & --\tabularnewline
+TTT & --\tabularnewline
+Exp.val & 42\%\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -551,6 +547,43 @@ nudged. At least then the battle lines are clearer.
 
 \href{http://emanuelderman.com/misbehavioral-psychology/}{Derman (2020) Misbehavioural}
 \href{pdf/Derman_2020_Misbehvioural_FAZ.pdf}{(pdf)}
+
+\hypertarget{biased-behaviour}{%
+\section{Biased Behaviour}\label{biased-behaviour}}
+
+\emph{Fix}
+
+According to behavioral economics, most human decisions are mired in `bias'. It muddles our actions from the mundane to the monumental. Human behavior, it seems, is hopelessly subpar.1
+
+Or is it?
+
+You see, the way that behavioral economists define `bias' is rather peculiar. It involves 4 steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Start with the model of the rational, utility-maximizing individual --- a model known to be false;
+\item
+  Re-falsify this model by showing that it doesn't explain human behavior;
+\item
+  Keep the model and label the deviant behavior a `bias';
+\item
+  Let the \href{https://en.wikipedia.org/wiki/List_of_cognitive_biases}{list} of `biases' grow.
+\end{enumerate}
+
+Jason Collins (an economist himself) thinks this bias-finding enterprise is weird.
+In his essay \href{https://evonomics.com/please-not-another-bias-the-problem-with-behavioral-economics/}{`Please, Not Another Bias!'}, Collins likens the proliferation of `biases' to the accumulation of epicycles in medieval astronomy. Convinced that the Earth was the center of the universe, pre-Copernican astronomers explained the (seemingly) complex motion of the planets by adding `epicycles' to their orbits --- endless circles within circles. Similarly, when economists observe behavior that doesn't fit their model, they add a `bias' to their list.
+
+The accumulation of `biases', Collins argues, is a sign that science is headed down the wrong track. What scientists should do instead is actually explain human behavior. To do that, Collins proposes, you need to start with human evolution.
+
+The `goal' of evolution is not to produce rational behavior. Evolution produces \emph{behavior that works} --- behavior that allows organisms to survive. If rationality does evolve, it is a tool to this end. On that front, conscious reasoning appears to be the exception in the animal kingdom. Most animals survive using instinct.
+
+An organism's `bias' should be judged in relation to its evolutionary environment. Otherwise you make silly conclusions --- such as that fish have a `bias' for living in water, or humans have a `bias' for breathing air.
+
+When behavioral economists conclude that our probability intuition is `biased', they assume that its purpose is to understand the god's eye view of innate probability --- the behavior that emerges after a large number of observations. But that's not the case. Our intuition, I argue, is designed to predict probability as we observe it \ldots{} in small samples.
+
+\href{https://economicsfromthetopdown.com/2021/07/09/is-human-probability-intuition-actually-biased/}{Fix (2021) Is Human Probability Intuition Actually `Biased'?}
 
 \hypertarget{economic-growth}{%
 \chapter{Economic Growth}\label{economic-growth}}
@@ -2212,6 +2245,12 @@ social capital by The Review appears fuzzy, double-edged and dangerous for democ
 \hypertarget{money-creation}{%
 \section{Money Creation}\label{money-creation}}
 
+\textbf{Addiction}
+
+Bank of England `addicted' to creating money, say peers.
+The Bank of England risks becoming addicted to creating money and needs to come clean about how it plans to unwind its £895bn bond-buying programme, the House of Lords has warned.
+\href{https://www.theguardian.com/business/2021/jul/16/bank-of-england-creating-money-lords-quantitative-easing}{Guardian}
+
 \href{https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf}{McLeay (2014) Money Creation in the Modern Economy}
 \href{pdf/money-creation-in-the-modern-economy.pdf}{(pdf)}
 
@@ -2394,6 +2433,74 @@ Unfortunately, the reaction of the mainstream was less enlightened: rather than 
 \textbf{Macroeconomics cannot be derived from microeconomics.}
 
 \href{https://evonomics.com/why-economists-have-to-embrace-complexity-steve-keen/}{Steve Keen}
+
+\hypertarget{debt-and-interest}{%
+\chapter{Debt and Interest}\label{debt-and-interest}}
+
+\hypertarget{unpayable-debt-in-a-stationary-economy}{%
+\section{Unpayable debt in a Stationary Economy}\label{unpayable-debt-in-a-stationary-economy}}
+
+\emph{Hartley Abstract}
+
+Under what circumstances are interest-bearing loans compatible with an economy without much growth? The question is becoming increasingly important given a tendency towards declining growth in industrialised economies and increasing evidence that continued growth is incompatible with environmental sustainability. Previous theoretical work suggests that when interest-bearing loans compound, this results in exponentially growing debts that are impossible to repay in the absence of economic growth. We here examine ten historical cases to assess support for this finding. We find that interest-bearing loans have typically resulted in unpayable debts in these non- and slow-growing economies. We further identify four broad category of measures to prevent or alleviate the problem of unpayable debts, and show how they have been employed in the past. Our Appendix compiles sources of debt regulation from across the world over five millennia.
+
+\emph{Hartley Memo}
+
+Compound interest debt-based money is incompatible with a
+stationary economy but interest bearing debt-based money does not
+necessarily imply compound interest.
+
+Positive interest
+rates do not systematically lead to exponentially growing deposits,
+because taxation and consumption out of wealth and income can
+dampen the positive feedback loop of compound interest.
+
+Our starting point for this paper, then, is the longstanding body of
+literature which suggests that when interest compounds it can result in
+exponentially growing debts that are unpayable in the absence of
+economic growth. This body of theory has been developed to analyse
+modern economies, with the particular aim of better understanding
+what may happen if today's economies stop growing.
+
+Rome,
+for example, had significant levels of financial intermediation and credit
+creation, with one recent comparative analysis concluding ``that financial
+institutions in the early Roman Empire were better than those of
+eighteenth- century France and Holland. They were similar to those in
+eighteenth-century London and probably better than those available
+elsewhere in England''
+
+What particularly motivates us here is a desire to un­
+derstand the consequences of positive interest in the absence of growth,
+and also to shed light on how these societies tried to mitigate the
+potential negative effects of interest-bearing loans.
+
+The charging of interest in the absence
+of substantial economic growth was accompanied by notable levels of
+unpayable debt in seven out of our ten cases.
+
+In these seven
+cases, there is evidence that in different periods this resulted in debtor
+dispossession and indenture, and at least some degree of social upheaval
+or revolt.
+
+The more extended lending is, the more individual problems of
+indebtedness are likely to translate into a bigger social problem.
+
+One might also argue
+that if lending markets worked efficiently, real interest rates in modern
+economies should converge towards the rate of real economic activity,
+which would suggest that real interest rates in a non-growing economy
+should tend towards zero.
+
+Current theories that
+suggest interest-bearing loans may become problematic in the absence
+of substantial growth have significant empirical support when tested
+against historical cases.
+
+\href{https://www.sciencedirect.com/science/article/pii/S0921800921001907}{Hartley and Kallis (2021) Interest-bearing loans and unpayable debts in slow-growing economies: Insights from ten historical cases}
+\href{pdf/Hartley_Kallis_2021_Unpayable_debt.pdf}{(pdf)}
+\href{pdf/Hartley_Kallis_2021_Unpayable_debt_SI.pdf}{(SI pdf)}
 
 \hypertarget{productivity}{%
 \chapter{Productivity}\label{productivity}}
@@ -3597,6 +3704,163 @@ ting to understand warming effects.
 
 \href{pdf/Dell_2014\%20_The_New_Climate_Economy_Litterature.pdf}{Dell (2014) What Do We Learn from the Weather? The New Climate--Economy Literature (pdf)}
 
+\hypertarget{finnish-carbon-tax}{%
+\section{Finnish Carbon Tax}\label{finnish-carbon-tax}}
+
+\emph{Mideksa Abstract}
+
+Finland introduced the planet's first carbon tax in 1990 to experiment with, to most economists,
+the best policy to reverse carbon emissions. I estimate the causal effect of taxing carbon on Finnish
+emissions using the Synthetic Control Approach (Abadie, 2021). The results suggest that taxing
+carbon reduces emissions by big margins. Finnish emissions are 16\% lower in 1995, 25\% lower
+in 2000, and 30\% lower in 2004 than emissions in the counterfactual consistent with carbon taxes
+whose value increasing by 20 fold in 1990 - 2005. The estimates suggest that the carbon tax's
+abatement elasticity is about 9\%.
+
+\emph{Mideksa Memo}
+
+Despite the conceptual
+foundation behind using a carbon tax to reverse carbon emissions being strong, its
+empirical foundation remains arguably weaker.
+
+The supporting evidence for the effectiveness of taxing carbon is missing, first,
+because few countries have taxed carbon: even fewer empirical studies of the causal
+effect on emissions.
+
+Besides, in the countries that have
+taxed carbon, the policy-induced data generating process has been too complex to lend
+itself to causal identification.
+
+\textbf{Syntetic Control Approach}
+
+What is the causal effect on CO 2 emissions of the Finnish taxes on carbon? One can
+think about this question and identify the causal effect by conducting a randomized control
+trial: some regions, chosen randomly, tax carbon while the remaining regions serve as a
+control group. Yet, countries tax carbon in all regions let alone with randomization. One
+thus needs a second-best alternative to randomization: the synthetic control approach to
+estimate the causal effect of the Finnish carbon tax since 1990.
+
+The synthetic control method adopts a data-driven approach in choosing the best
+comparison unit and allows falsification tests in assessing its sensitivity
+
+In estimating the effect of the Finnish carbon tax using synthetic control, I focus
+on emissions from the transportation sector for the following reasons. First, there is a
+problem of ruined-control in the countries without a carbon tax. The problem arises
+when Finland imposes the carbon tax, some inputs can be imported from (or exported
+to) other countries. In other words, the aggregate emissions in nations without a carbon
+tax could be affected by the Finnish carbon tax when such countries trade with Finland.
+This is a concrete problem, for example, when it comes to per capita emissions, which is
+a contaminated measure for a small open economy like Finland. However, transportation
+services are internationally non-tradable, the ruined-control effect due to international
+trade is limited.
+
+The structure of energy production and use in transport activities is
+similar across countries. This eases the task of constructing a valid comparison unit to
+Finland from the set of other countries.
+
+I focus on the transport sector due to the availability of data for
+predictors that allow comparability across countries.
+
+The estimated gap between the actual and the counterfactual emissions implies that
+the carbon tax reduces emissions considerably. Finnish emissions are 16\% lower in 1995,
+25\% lower in 2000, and 31\% lower in 2005 relative to the counterfactual. Rising impact
+over time goes in line with the increasing intensity of the CO 2 tax per ton of CO 2 over
+time (i.e., increased by 20 fold in the treatment period). The estimated emissions
+reductions came from stabilizing the Finnish emissions at the 1990 level relative to
+sharply rising emissions in the countries lacking a carbon tax. The estimated emissions
+reductions are consistent with the decline in Finnish gasoline, and diesel, consumption
+after 1990. Moreover, Finnish passenger transport activities and the number of vehicles
+have decreased to a new trend after 1990.
+
+I estimate the carbon tax elasticity of
+emissions reductions directly by using the real carbon tax data and its estimated impact.
+The geometric mean of the annual carbon tax elasticity of emissions reduction values is
+−9\%.
+
+The countries in the donor pool adopt arguably similar transportation technologies as
+Finland. Limiting the donor pool to countries whose emissions are driven by a similar
+structural process as that of Finland serves as a reasonable potential comparison unit.
+
+The
+counterfactual trajectory of emissions emerges as a convex combination of emissions of
+six countries. These countries, with corresponding weight in a bracket, are the United
+Kingdom (43.20\%), Turkey (18.40\%), New Zealand (15.90\%), Luxembourg (10.20\%),
+Switzerland (9.40\%), and the United States of America (2.90\%).
+
+A useful parameter to summarize the effect of carbon tax is elasticity. Since the
+number of observations is very small, the OLS based estimation of elasticity is sensitive
+and its application is conceptually questionable.
+
+The initial values of annual
+elasticity are higher consistent with abundant possibilities of low-hanging abatement
+options. While the values of annual elasticity oscillate, the arithmetic and geometric
+mean values are 0.099 and 0.086 respectively.
+
+eople expect taxes to be
+permanent and long term while variations in fuel prices could be short-term. In
+response, people adjust both on the intensive and the extensive margins when facing
+carbon taxes whereas mostly on intensive margins for temporary fluctuations in gasoline
+prices. Third, carbon taxes carry a signal from a society that urge for reducing carbon
+emissions, a signal absent in temporary variations in gasoline prices.
+
+The identifying assumption underlying the synthetic control approach is that emissions in
+synthetic Finland serve as a valid counterfactual. For example, if countries price carbon
+indirectly through energy and fuel taxes, the identifying assumption calls for a similar
+evolution of such variables both in Finland and synthetic Finland.
+
+To take into account implicit carbon prices, I exclude countries that have raised their
+fuels taxes from the donor pool.
+
+I perform a back-dating test by introducing
+hypothetical carbon taxes in 1986, 1987, and 1988. Besides, I drop one predictor at a
+time to re-estimate emissions in synthetic Finland.
+
+While
+one recognizes that the Finnish recession in 1990 -- 1993 could have played some role in
+reducing emissions, it is unclear if the recession is the central explanation for the observed
+emissions reductions in 1993 -- 2005. Similarly, the high elasticity estimates may reflect
+the low-hanging fruits.
+
+The case for a carbon tax, when compared with auctioned quotas, is far from
+unanimous.
+The reservation goes back, at least, to Buchanan (1969, p.~175) -- who
+aimed at contributing the project of ``dismantling of the Pigovian tradition in applied
+economics, defined here as the emphasis on internalizing externalities through the
+imposition of corrective taxes and subsidies.''
+
+The current concerns include the difficulty
+of meeting a given emissions target (Harris and Pizer, 2020) and the ramifications for
+risk externality (Mideksa, 2020), the political difficulty of imposing a tax and changing
+it over time (Slemord and Bakija, 2017), the challenge of enforcing a tax and avoiding
+evasion in countries with a weak fiscal capacity (Acemoglu, 2005; Besley and Persson,
+2009), the ease for allowing exceptions and loopholes and for undermining a tax through
+subsidies to complementary inputs, and other factors covered in Sterner and Coria
+(2012) and Stavins (2020). These factors, in addition to carbon leakage, can explain why
+there was no break in the trend of Finnish industrial CO 2 emissions around 1990.
+
+Focusing on political economy considerations, Brooks
+and Keohane (2020, p.~20) explain the point as follows. ``In general, the environmental
+community is focused on ensuring emissions reductions, while the regulated industry is
+focused on limiting costs. The former's strong preference for such environmental
+certainty helps to explain why existing market-based climate policies are
+overwhelmingly quantity-based; the latter's insistence on some degree of cost certainty
+helps to explain why these policies generally also include price containment
+mechanisms.'' 10 Emissions target can be unmet due to the uncertainty from business
+cycles or MIT shocks like pandemics. Other things being the same, carbon taxes deliver
+higher abatements during recessions and lower abatements during booms, relative to
+auctioned quotas.
+
+Since economies tend to have more periods of a boom than periods of a
+recession (e.g., see Figure 2 in Rebelo, 2005), some stakeholders (e.g., environmentalists
+that Brooks and Keohane (2020) refer to) worry that taxes can fail to meet emissions
+targets. Nevertheless, the Finnish experience in 1990 -- 2005 suggests something else: a
+well-crafted carbon tax induces meaningful emissions reductions both in booms and
+recessions in the early phases of decarbonization. Thus, the Finnish experience does not
+support the idea that carbon taxes are excuses to continue emitting more.
+
+\href{https://www.cesifo.org/en/publikationen/2021/working-paper/pricing-cooler-planet-empirical-analysis-effect-taxing-carbon}{Mideksa (2021) Finnish Carbon Tax}
+\href{pdf/Mideksa_2021_Finnish_Carbon_Tax.pdf}{(pdf)}
+
 \hypertarget{resource-economics}{%
 \chapter{Resource Economics}\label{resource-economics}}
 
@@ -4533,7 +4797,7 @@ fiscal, or other macroeconomic policies.
 \hypertarget{cost-benefit-analysis}{%
 \chapter{Cost Benefit Analysis}\label{cost-benefit-analysis}}
 
-\emph{Spash}
+\emph{Spash on Dasgupta Review}
 
 Decades ago environmental CBA developed a range of methods for imputing monetary values, but
 with limited applicability under specific conditions (Hanley \& Spash, 1993; Spash, 2005). For a
@@ -4544,23 +4808,23 @@ the same which is violated by large changes. Clearly things like mass extinction
 human induced climate change are not small, marginal, changes.
 Two approaches are employed by social CBA: revealed and stated preference methods. The first relies
 upon existing markets that can be associated with environmental attributes (e.g.~air pollution affecting
-house prices) and so is severely restricted. The second uses surveys designed to illicit, primarily, willing-
-ness-to-pay for environmental changes. Dasgupta attends to one stated preference approach: the con-
-tingent valuation method (CVM). He claims that: `CVM is attractive because it appeals to our
+house prices) and so is severely restricted. The second uses surveys designed to illicit, primarily,
+willingness-to-pay for environmental changes. Dasgupta attends to one stated preference approach: the
+contingent valuation method (CVM). He claims that: `CVM is attractive because it appeals to our
 democratic instinct, that people should be asked for their opinion on matters that may be of concern
 to them' (Dasgupta, 2021, p.~304). In addition, the CVM is promoted as widely applicable (unbounded
 by existing markets) to revealing values for everything from aesthetics to biodiversity loss. The ability to
-include a range of value categories contributing to an individual's utility extends to including: `respon-
-dents' sense of a species' existence value---perhaps even its intrinsic value' (Dasgupta, 2021, p.~304). Nor-
-mally environmental economists define a set of four values: direct use, option, existence and bequest
+include a range of value categories contributing to an individual's utility extends to including:
+`respondents' sense of a species' existence value---perhaps even its intrinsic value' (Dasgupta, 2021, p.~304).
+Normally environmental economists define a set of four values: direct use, option, existence and bequest
 value. However, Dasgupta (Dasgupta, 2021, p.~301), for no apparent reason, claims a different set of
 six sources of value for biodiversity that mix-up objects of value with types of values. While all his
-examples are consequentialist and based on creating utility for humans, he confuses concepts of exist-
-ence value with sacred values, moral worth and intrinsic value. So let us turn to the value problems.
+examples are consequentialist and based on creating utility for humans, he confuses concepts of
+existence value with sacred values, moral worth and intrinsic value. So let us turn to the value problems.
 
 Economic welfare theory requires that people should be
-compensated, not pay, for an environmentally degrading imposition on them (e.g.~pollution, biodi-
-versity loss). However, this is generally not undertaken because people could ask large sums,
+compensated, not pay, for an environmentally degrading imposition on them (e.g.~pollution,
+biodiversity loss). However, this is generally not undertaken because people could ask large sums,
 destroying the economic calculus, so economists prefer to restrict respondents replies to their
 income (i.e.~ability to pay) regardless of their own theoretical requirements for validity.
 Besides being the incorrect measure, willingness-to-pay is not a democratic approach
@@ -4571,12 +4835,12 @@ deemed unacceptable because people appear willing-to-pay too much or refuse to b
 Attempts have then been made to redesign the surveys to get the responses economists want and
 hence they developed choice experiments, cited as a problem solving advance by Dasgupta (2021,
 p.~304). Here respondents have restricted ability to protest, or violate the economists model of
-how they should behave, and can only refuse to answer completely and fall into the ignored non-
-respondent category. Failing `success' with survey design, collected data may be subject to manipu-
-lation to get the desired values.
+how they should behave, and can only refuse to answer completely and fall into the ignored
+nonrespondent category. Failing `success' with survey design, collected data may be subject to
+manipulation to get the desired values.
 
-The welfare economics underlying social CBA assumes that all values can be reduced to individual prefer-
-ences as expressions of utility.
+The welfare economics underlying social CBA assumes that all values can be reduced to individual
+preferences as expressions of utility.
 
 Refusing to make trade-offs is also a principled positon disallowed by
 mainstream economics or treated as an anomaly.
@@ -4598,9 +4862,9 @@ although their transport departments may continue to use them on a daily basis.
 
 \emph{IPCC}
 
-A major example of the failings of VSL arose during the third assessment report of the Intergo-
-vernmental Panel on Climate Change (IPCC). Willingness-to-pay informed VSL, based on Fan-
-khauser (1995, p.~47), gave a range from \$0.2--\$16.0 million with an average of \$3 million, and
+A major example of the failings of VSL arose during the third assessment report of the
+Intergovernmental Panel on Climate Change (IPCC). Willingness-to-pay informed VSL, based on
+Fankhauser (1995, p.~47), gave a range from \$0.2--\$16.0 million with an average of \$3 million, and
 \$1.5 million adopted as the VSL for developed countries. Adjustment was made for income to
 give `an arbitrary value of \$300,000 for middle income and \$100,000 for low income countries'.
 The result was a factor of fifteen difference between VSL in high (\$1.5 million) and low (\$0.1
@@ -4615,23 +4879,23 @@ moridity/mortality would be outweighed due to increased leisure opportunities by
 in China and by 38 to 3 in the USA. An example Nordhaus was using at the time concerned claiming
 that golfers may view global warming as a boon to year-round recreation. So, if we extend this
 logic to global studies, more golfing days in Florida could compensate for dead people in China.
-The commensuration of values in The Review is no different. Classes of capital are values, equa-
-ted and summed. Human capital is an aggregation of values so that, for example, more `education'
+The commensuration of values in The Review is no different. Classes of capital are values,
+equated and summed. Human capital is an aggregation of values so that, for example, more `education'
 can compensate for increased risk of death. More than this, if education pays better financial
 dividends than avoiding loss of life then, according to the economic accountants, the optimal world
 should have more education and more death.
 
 \hypertarget{discounting-1}{%
-\subsubsection{Discounting}\label{discounting-1}}
+\section{Discounting}\label{discounting-1}}
 
-The mechanism chosen by Dasgupta to allocate natural resources between current and future gen-
-erations is a social discount rate (SDR). Alternatives, such as allocation on grounds of justice, rights
+The mechanism chosen by Dasgupta to allocate natural resources between current and future
+generations is a social discount rate (SDR). Alternatives, such as allocation on grounds of justice, rights
 or needs, are therefore excluded,
 
 While acknowledging the major ethical objections to discriminating against future
 generations via discounting, Dasgupta (2021, Chapter 10) nevertheless chooses a positive discount
-rate. He justifies this using the dubious argument that since returns on judiciously chosen invest-
-ments are positive (by assumption), fairness requires discriminating against future generations,
+rate. He justifies this using the dubious argument that since returns on judiciously chosen
+investments are positive (by assumption), fairness requires discriminating against future generations,
 because otherwise the current generation would be unduly limited in consumption and condemned
 to excessive poverty. This is a productivist logic based on assuming the future is always better-off.
 
@@ -4641,8 +4905,8 @@ here is to follow a formulae, called the Ramsey rule, that determines the SDR an
 
 \[SDR = r + h g = STP\]
 
-where g is annual per capita growth of consumption, η is the elasticity of marginal utility of consump-
-tion and ρ is the utility discount rate, consisting of a component for pure time preference, δ, and, in
+where g is annual per capita growth of consumption, η is the elasticity of marginal utility of
+consumption and ρ is the utility discount rate, consisting of a component for pure time preference, δ, and, in
 HM Treasury practice, a component for certain types of risk, L. Components of the formulae are so
 uncertain that economists appeal to surveying themselves to get estimates, as if
 this provided objective data.
@@ -4651,8 +4915,8 @@ In The Review commitment to an actual number is vague, and subject to
 speculation as to economic growth and uncertainty. Elsewhere Dasgupta (2008) has argued that δ
 could be zero, while, contrary to others, he argues for a much higher η in the range 2--3 or more.
 The basic rate used by HM Treasury, in its Green Book, is 3.5\%, 6 where δ = 0.5, L = 1 so
-that ρ = 1.5 with the remainder consisting of consumption growth g = 2 and η = 1. If Dasgupta's argu-
-ment for η is adopted then the STP would be between 5.5\% and 7.5\%, but he has argued favouring δ =
+that ρ = 1.5 with the remainder consisting of consumption growth g = 2 and η = 1. If Dasgupta's
+argument for η is adopted then the STP would be between 5.5\% and 7.5\%, but he has argued favouring δ =
 0 which would give 5.0--7.0\%. This is extremely high.
 
 For comparison consider how Nordhaus uses such rates to recommend catastrophic global
@@ -4668,18 +4932,18 @@ observable rates of return should be used. However, in actual economies the rate
 free investment has been zero or negative in real terms for years (Freeman et al., 2018, p.~16), but
 discounting has persisted regardless of the theoretical justifications.
 
-n fact there is no such thing as a singular rate in actual economies. The recognition that differ-
-ential rates for different projects is theoretically justified, and specifically for projects with environ-
-mental impact, has led HM Treasury to discount at a lower rate (1.5\%) for project impacts on health
+In fact there is no such thing as a singular rate in actual economies. The recognition that
+differential rates for different projects is theoretically justified, and specifically for projects with
+environmental impact, has led HM Treasury to discount at a lower rate (1.5\%) for project impacts on health
 and life. However, while recognized as formally correct Dasgupta rejects this
 on the grounds, not of theory but, that it will be `cumbersome' in practice and `lead inevitably to
-errors'. Indeed he states it would be `unsafe' because (now) the `social evaluator' (or `citizen inves-
-tor') cannot be trusted to get things right. Instead he recommends a single rate applied to all pro-
-jects. The reader might wonder at such pragmatism, for if all the problems of neoclassical
+errors'. Indeed he states it would be `unsafe' because (now) the `social evaluator' (or `citizen
+investor') cannot be trusted to get things right. Instead he recommends a single rate applied to all
+projects. The reader might wonder at such pragmatism, for if all the problems of neoclassical
 economics can be so easily dismissed on a whim as impractical and too cumbersome for his
 social/citizen evaluator/investor this rather begs the question why he bothers us with his models,
-theories and extensive mathematical detours and what other fallibilities his central decision-
-maker might suffer from.
+theories and extensive mathematical detours and what other fallibilities his central
+decisionmaker might suffer from.
 That markets are not guides to intergenerational fairness, ethics or equity, would seem to bring
 the whole approach into question. In his paper on discounting for climate change Dasgupta
 concludes: `Intergenerational welfare economics raises more questions than it is able to
@@ -4954,6 +5218,85 @@ Macroeconomics became temporarily dominated by anti-interventionists. Economists
 The free-marketers had a deep impact on econ education. Greg Mankiw's textbooks, which generally favor free-market ideas, have become the standard introductory undergrad textbook, and are only now starting to be displaced by materials like Krugman's textbooks and the CORE Project.
 
 \href{https://noahpinion.substack.com/p/is-economics-an-excuse-for-inaction}{Noah Smith (2015) Is economics an excuse for inaction?}
+
+\hypertarget{weaponizing-economics}{%
+\section{Weaponizing Economics}\label{weaponizing-economics}}
+
+\emph{Franta Abstract}
+The role of particular scientists in opposing policies to slow and halt global
+warming has been extensively documented. The role of economists, however,
+has received less attention. Here, I trace the history of an influential group of
+economic consultants hired by the petroleum industry from the 1990s to the
+2010s to estimate the costs of various proposed climate policies. The economists
+used models that inflated predicted costs while ignoring policy benefits,
+and their results were often portrayed to the public as independent rather than
+industry-sponsored. Their work played a key role in undermining numerous
+major climate policy initiatives in the US over a span of decades, including
+carbon pricing and participation in international climate agreements. This study
+illustrates how the fossil fuel industry has funded biased economic analyses to
+oppose climate policy and highlights the need for greater attention on the role
+of economists and economic paradigms, doctrines, and models in climate
+policy delay.
+
+\emph{Franta Memo}
+
+An early
+handbook written for regulated industries even has among its top recommendations,
+`Coopt the Experts' (Owen and Braeutigam 1978). The handbook explains (p.~7):
+
+\begin{quote}
+``Regulatory policy is increasingly made with the participation of experts,
+especially academics. A regulated firm or industry should be prepared when­
+ever possible to coopt these experts. This is most effectively done by identifying
+the leading experts in each relevant field and hiring them as consultants or
+advisors, or giving them research grants and the like. This activity requires
+a modicum of finesse; it must not be too blatant, for the experts themselves
+must not recognize that they have lost their objectivity and freedom of action.''
+\end{quote}
+
+By the early 1980s, at least some economists were already counteracting
+calls for policies that would help prevent and minimize global warming. In
+1983, the US National Academy of Sciences published Changing Climate,
+a report presenting an overview of contemporary climate science and policy
+thinking (National Research Council 1983). The portions by scientists, for
+the most part, warned that continued fossil fuel use would have dire con­
+sequences.
+
+The economists, in contrast, counseled against policy action, suggesting
+that global warming might not be that bad. Thomas Schelling of Harvard
+University argued that migration and adaptation would be preferable to
+reducing fossil fuel emissions. `It would be wrong to commit ourselves to
+the principle,' he wrote, `that if fossil fuels and carbon dioxide are where the
+problem arises, that must also be where the solution lies' (p.~449). William
+Nordhaus of Yale University agreed, writing that although a fossil fuel tax
+would reduce emissions, `{[}t{]}he strategies suggested . . . by Schelling . . . cli­
+mate modification or simply adaptation to a high CO 2 and high temperature
+world -- are likely to be more economical ways of adjusting' (p.~151). Yet
+neither economist provided a detailed analysis to support his conclusions.
+
+While the scientists' warnings were supported by decades of research, the
+economists' reassurances were closer to hopeful guesses.
+Yet the
+economists' arguments, though speculative, were given credibility by the
+National Academies report.
+
+as pressure grew in the late 1980s to prevent severe global warming,
+it may not be surprising that the fossil fuel industry turned to economists to
+help influence public policy. Important among these economists were those
+at Charles River Associates, a US-based consulting firm that played a key role
+in weakening, delaying, or defeating a wide range of climate policies over the
+following years, including US carbon pricing proposals and international
+climate agreements. These economic consultants helped convince the public
+and policymakers that climate policy would be costly, global warming would
+be relatively unimportant, and there would be little harm in delaying action.
+
+Their work was paid for by the fossil fuel industry, a fact often concealed
+from the public, and their methodologies were incomplete in favor of the
+industry.
+
+\href{https://www.tandfonline.com/doi/full/10.1080/09644016.2021.1947636}{Franta (2021) Weaponizing economics: Big Oil, economic consultants,
+and climate policy delay}
+\href{pdf/Franta_2021_Weaponizing_Economics.pdf}{(pdf)}
 
 \hypertarget{economists}{%
 \chapter{Economists}\label{economists}}
@@ -6052,6 +6395,17 @@ Thanks for visiting!
 
 \hypertarget{news}{%
 \chapter{NEWS}\label{news}}
+
+\hypertarget{carney-calls-for-stronger-government-regulation}{%
+\section{210717 Carney calls for stronger Government Regulation}\label{carney-calls-for-stronger-government-regulation}}
+
+For the world to meet its climate goals, governments would have to force industries to follow \emph{clear rules, on everything} from energy generation to construction and transport, and set carbon prices that would drive investment towards green ends and close down fossil fuels.
+
+``We need clear, credible and predictable regulation from government,'' he said. ``Air quality rules, building codes, that type of strong regulation is needed. You can have strong regulation for the future, then the financial market will start investing today, for that future. Because that's what markets do, they always look forward.''
+
+Without such robust intervention from governments, markets would fail to address the crisis.
+
+\href{https://www.theguardian.com/environment/2021/jul/17/regulate-business-to-tackle-climate-crisis-urges-mark-carney}{Gurdian}
 
   \bibliography{book.bib,packages.bib}
 
