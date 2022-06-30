@@ -1,12 +1,17 @@
 economics
 macroeconomics
 outdated-marginalism
+market-primacy
 economic-rent
 digital-rent
 scarcity
+there-is-no-scarcity
+how-theres-more-to-economics-than-the-science-of-scarcity
+the-case-against-civilization
 rationing
 taxing
 tax-shifting
+georgism---land-value-tax
 nudging
 randomness
 discounting
@@ -19,6 +24,7 @@ rebound-jevons-paradox
 ergodicity
 almost-surely
 kelly-criterion
+economic-planning
 austrian
 where-austrians-got-it-wrong
 behavioural-economics
@@ -41,6 +47,7 @@ production-function
 keen-critique
 neo-liberal-economics
 washinton-consensus
+neoliberalism-vs-capitalism
 steady-state-economics-sse
 herman-daly
 spatial-economics
@@ -51,6 +58,7 @@ history-of-urban-economics
 jane-jacobs
 regional-economics
 ecological-economics
+natural-resources-and-energy
 econophysics
 economy-as-dissipative-system
 complexity-economics
@@ -80,6 +88,7 @@ inflation-as-restructuring
 modern-monetary-theory-mmt
 miltons-money
 markets
+market-primacy-1
 markets-as-entropy-maximisers
 the-social-relations-of-production-as-constraints
 competition-bargaining
@@ -87,11 +96,14 @@ demand
 human-needs
 aggregate-demand-function
 inequality
+inflation-1
+fiscal-theory-of-price-level
+price-control
 innovation
 us-vs-scandinavia
 debt-and-interest
 unpayable-debt-in-a-stationary-economy
-price-control
+phillips-curve
 productivity
 productivity-pay-gap
 ipr-stagnation
@@ -103,6 +115,8 @@ wealth
 climate-economics
 a-blocking-neoclassical-framework
 long-term-economic-effects-of-climate-change
+carbon-tax
+fee-and-dividend
 finnish-carbon-tax
 instrument-choice-delays
 ssps
@@ -110,6 +124,7 @@ guard-rail-economics
 tipping-points
 keynesian-decarbonization
 discount-rate
+geoff-man-on-nordhaus
 resource-economics
 sustainability
 vml---voluntary-market-led-sustainability
@@ -148,11 +163,14 @@ net-domestic-consumer-surplus
 countries
 argentina
 china-1
+italy
 jamaica
 norway
 oil-and-gas
 emissions
+russia
 turkey
+ukraine
 economics-1
 economics-is-pseudo-science
 economic-goods-and-services
@@ -161,6 +179,7 @@ second-best-theory
 economics-empirical-turn
 history-of-economics
 weaponizing-economics
+history-of-growth-thinking
 economists
 joan-robinson
 pierro-sraffa
@@ -168,6 +187,7 @@ diane-coyle
 what-happened-to-cambridge-economics
 mario-draghi
 james-galbraith
+john-maynard-keynes
 paul-romer
 frederick-soddy
 dennis-snower
@@ -178,6 +198,7 @@ herman-daly-1
 wassily-leontief
 friedrich-hayek
 william-nordhaus
+axel-leijonhufved
 economic-sectors
 housing
 land-tenure-finance
