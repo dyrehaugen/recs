@@ -30,6 +30,7 @@ where-austrians-got-it-wrong
 behavioural-economics
 biased-behaviour
 corporations
+experimental-economics
 economic-growth
 growth-without-economic-growth
 ditching-economic-growth
@@ -95,6 +96,10 @@ competition-bargaining
 demand
 human-needs
 aggregate-demand-function
+game-theory
+nash-equilibrium
+mean-field-game-theory-mfg
+mechanism-design
 inequality
 inflation-1
 fiscal-theory-of-price-level
@@ -103,6 +108,7 @@ innovation
 us-vs-scandinavia
 debt-and-interest
 unpayable-debt-in-a-stationary-economy
+investment
 phillips-curve
 productivity
 productivity-pay-gap
