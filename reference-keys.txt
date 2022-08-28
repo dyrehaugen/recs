@@ -2,6 +2,7 @@ economics
 macroeconomics
 outdated-marginalism
 market-primacy
+duality
 economic-rent
 digital-rent
 scarcity
@@ -32,6 +33,7 @@ biased-behaviour
 corporations
 experimental-economics
 economic-growth
+degrowth
 growth-without-economic-growth
 ditching-economic-growth
 institutional
@@ -49,6 +51,7 @@ keen-critique
 neo-liberal-economics
 washinton-consensus
 neoliberalism-vs-capitalism
+productivism
 steady-state-economics-sse
 herman-daly
 spatial-economics
@@ -104,6 +107,7 @@ inequality
 inflation-1
 fiscal-theory-of-price-level
 price-control
+greedflation
 innovation
 us-vs-scandinavia
 debt-and-interest
@@ -159,6 +163,7 @@ end-of-theory
 jackson-victor
 eurogreen-model
 harmoney
+input-output
 agent-based-macro
 cost-benefit-analysis
 discounting-1
@@ -180,6 +185,7 @@ turkey
 ukraine
 economics-1
 economics-is-pseudo-science
+the-invisible-hand
 economic-goods-and-services
 economics-discipline
 second-best-theory
