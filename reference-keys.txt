@@ -70,6 +70,7 @@ functional-finance
 macro-finance
 institutional-supercycles
 central-banking
+ecb---implosion
 externalities
 commons
 hardin-and-ostrom
@@ -97,13 +98,16 @@ markets-as-entropy-maximisers
 the-social-relations-of-production-as-constraints
 competition-bargaining
 demand
+theory
 human-needs
 aggregate-demand-function
 game-theory
 nash-equilibrium
 mean-field-game-theory-mfg
 mechanism-design
+market-design
 inequality
+us-and-uk-are-poor-countries-with-rich-people-within
 inflation-1
 fiscal-theory-of-price-level
 price-control
@@ -172,6 +176,7 @@ corporate-tax
 welfare
 the-social-guarantee
 net-domestic-consumer-surplus
+world-economy
 countries
 argentina
 china-1
@@ -181,6 +186,7 @@ norway
 oil-and-gas
 emissions
 russia
+saudi-arabia
 turkey
 ukraine
 economics-1
